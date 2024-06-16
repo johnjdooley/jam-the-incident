@@ -1,0 +1,69 @@
+{
+	"quests": [
+		[
+			"book",
+			"I started here (see drawing above), then walked towards the city baths; crossed the next street and stopped at a payphone. I must've lost it somewhere around there",
+			[
+				-37.80909443257979,
+				144.96372198244666
+			],
+			"Bert",
+			"./images/clues/case_1.jpeg",
+			"./images/search/search_book.jpg",
+            "33089401",
+            [ 1457, 2101 ]
+		],
+		[
+			"game console",
+			"I started here (see drawing above) near some people rock climbing. Then I headed towards Flinders st.; after passing 4 sets of traffic lights I stopped for some food at the fast food place on the corner. I must've lost it around there",
+			[
+				-37.81174780157047,
+				144.96472132607832
+			],
+			"Ernie",
+			"./images/clues/case_2.jpeg",
+            "./images/search/search_gb.jpg",
+            "29482014",
+            [ 2491, 484 ]
+		],
+		[
+			"bear",
+			"I had some food here (see drawing above). After that I headed towards Flinder's st. until I stopped into that shop with that suit of armour inside the doorway. I must've lost it around there",
+			[
+				-37.81427675491354,
+				144.96589581945685
+			],
+			"Oscar",
+			"./images/clues/case_4.jpeg",
+            "./images/search/search_bear.jpg",
+            "802303894",
+            [ 203, 2463 ]
+		],
+        [
+			"earpod",
+			"I started here (see drawing above, this is not near the state library!) and crossed the street. Then I headed towards Flinders st. and watched a film in that old art deco building. I must've lost it around there",
+			[
+				-37.81492829602573,
+				144.96618428433558
+			],
+			"Big Bird",
+			"./images/clues/case_3.jpeg", 
+            "./images/search/search_earpod.jpg",
+            "40489103",
+            [ 1375, 400 ]
+		],
+		[
+			"glasses",
+			"I was sitting on some park benches near this sign (see drawing above). I must've lost it around there",
+			[
+				-37.81695899399391,
+				144.96741234882415
+			],
+			"Elmo",
+			"./images/clues/case_5.jpeg",
+            "./images/search/search_glasses.jpg",
+            "13648922",
+            [ 1177, 1254 ]
+		]
+	]
+}

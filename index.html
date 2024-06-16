@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <base href=".">
+<link rel="stylesheet" href="./css/simple.min.css">
+
+</head>
+<body>
+	
+<header>
+	<h1>Swanston Street Detective</h1>
+	<p>After 'the incident' people keep losing valuables in all that dang grass, can you crack these cases?</p>
+	<!-- Debug location: <span id="location-debug"></span> -->
+</header>
+<div class="screen" id="intro">
+	
+	<p>This game is meant to be played in person on the mean streets of Swanston st in Melbourne.</p>
+	<p>Follow the clues and once you're in the right area then it turns into a "where's wally/waldo" game of find the object in the grass.</p>
+
+	<p>This game requires access to your location but nothing leaves your device and there's no analytics or nasty privacy invading stuff, source code for this game can be found <a href="https://github.com/johnjdooley/jam-the-incident">here</a></p>
+	<p>Good luck Detective!</p>
+	<p style="text-align: center;"><button class="js-button-clicked" >Start your first case</button></p>
+</div>
+
+	<div id="quest-info" style="display: none;">
+		<p>
+			<h3>Case Details</h3>
+			<table style="width:100%">
+				<tbody>
+					<tr><td>Case #</td><td  id="lost-item-case-number"></td></tr>
+					<tr><td>Item Lost</td><td id="lost-item-name"></td></tr>
+					<tr><td>Client</td><td id="lost-item-client"></td></tr>
+					<tr><td>Case status</td><td>Unsolved</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<hr/>
+		<p>
+			<h3>Interviewed Details</h3>
+			<figure style="max-width: 70%; margin: 40px auto; display:block; padding: 5% 5% 2% 5%; border: 1px solid #a0c4eb44; background: #f5f7ff">
+    			<img id="lost-item-image" src="" alt="missing" />
+    			<figcaption>Sketch artist impression of starting location</figcaption>
+			</figure>
+			<q></q>
+		</p>
+		<p style="text-align: center;"><button id="skip-search" >Skip search</button></p>
+		<p style="height: 50px;">&nbsp;</p>
+	</div>
+	<div id="search-for-item" style="display: none;">
+		<p>Yes this is the place! Well done now tap on the missing <strong id="search-item-name"></strong> below</p>
+		<p>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3072 3072" preserveAspectRatio="xMinYMin meet">
+				<image id="search-item-image" width="3072" height="3072" xlink:href="" />
+				<g class="hover_group" opacity="0">
+				  <a id="search-item-hotspot" xlink:href="#">
+					<rect x="0" y="0" opacity="1" fill="#000000" width="500" height="500"></rect>
+				  </a>
+				</g>
+			  </svg>
+		</p>
+		<p style="height: 50px;">&nbsp;</p>
+	</div>
+	<div id="found-item"  style="display: none;">
+		<p>
+			<h3>Case Details</h3>
+			<table style="width:100%">
+				<tbody>
+					<tr><td>Case #</td><td  id="lost-item-case-number"></td></tr>
+					<tr><td>Item Lost</td><td id="lost-item-name"></td></tr>
+					<tr><td>Client</td><td id="lost-item-client"></td></tr>
+					<tr><td>Case status</td><td style="color: red; font-weight: bold;">Solved</td></tr>
+				</tbody>
+			</table>
+		</p>
+		<p style="text-align: center;"><button class="action-button" >Next case</button></p>
+		<p style="height: 50px;">&nbsp;</p>
+	</div>
+	<div id="game-end"  style="display: none;">
+		<p>Congratulations you've solved all the cases!</p>
+		<p>Happiness returns to the Swanston st. citizens who have less stuff lost.</p>
+		<p>Who knows for how long?</p>
+		<p style="padding: 50px 0;">Game over - thanks for playing!</p>
+		<p style="text-align: center;"><button class="action-button" >Restart</button></p>
+	</div>
+
+<script type="module" src="js/index.js" ></script>
+</body>
+</html>
